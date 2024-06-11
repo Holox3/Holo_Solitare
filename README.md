@@ -1,0 +1,1 @@
+This is a Project that showcases a hardcoded game (Solitare Klondike) in only html,css and JS. Hostet from Github-Pages for an easy and fast use.
