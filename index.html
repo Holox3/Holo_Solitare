@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holo's Simple Solitaire</title>
-    <script type="module" src=".js/game.js" ></script>
     <script type="module" src=".js/klondike.js" ></script>
-    <link rel="stylesheet" href=".css/style.css">
-    <link rel="stylesheet" href=".css/cards.css">
-    <link rel="stylesheet" href=".css/klondike.css">
+    <link rel="stylesheet" href=".css/common.css"></link>
+    <link rel="stylesheet" href=".css/cards.css"></link>
+    <link rel="stylesheet" href=".css/klondike.css"></link>
 </head>
+
 <body>
     <h1>Holo's Simple Solitaire (WORK IN PROGESS)</h1>
-    <div id="game-board"></div>
-    <script src="script.js"></script>
+    <h4> Try to move all cards to the foundations (the 4 empty places at top right).</h4>
+
+    <div class="setting-box">
+        <div class="setting-inputs">
+            <label for="pick-input">Cards to pick at a time:</label>
+            <input type="number" id="pick-input" min="1" max="24" value="3" required />
+        </div>
+        <button id="new-game-button" class="new-game-button">New Game</button>
+    </div>
+
+    <div id="game" class="game-area"></div>
 
     <div class="last-update-date">
         <p>Last Time Updated:</p>
-        <p>14.06.2024</p>
-      </div>
+        <p>03.07.2024</p>
+        <p>Credits goes to <a href="https://www.sourcecodester.com/javascript/16647/klondike-solitaire-card-game-javascript-free-source-code.html">SourceCodester</a></p>
+    </div>
+
+   
 </body>
+
 </html>
