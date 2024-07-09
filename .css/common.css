@@ -1,8 +1,11 @@
 /* all html files use this css file */
 
 html {
-    background-color: #10a02a;
-    font-family: sans;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #10A02A;
+    background: -moz-linear-gradient(left, #10A02A 0%, #0E9025 50%, #0A671B 100%);
+    background: -webkit-linear-gradient(left, #10A02A 0%, #0E9025 50%, #0A671B 100%);
+    background: linear-gradient(to right, #10A02A 0%, #0E9025 50%, #0A671B 100%);
 }
 
 #link2index {
@@ -14,7 +17,7 @@ html {
     border-radius: 0.8em;
     padding: 0.5em;
     margin-top: 1px;
-    background-color: rgb(0, 250, 100);
+    background-color: #A6A6A6;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -67,4 +70,11 @@ input:invalid {
     -ms-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+.footer-info {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

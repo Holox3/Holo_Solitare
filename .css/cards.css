@@ -1,6 +1,9 @@
 #game {
     min-height: 25em;   /* javascript sets height, but that can't make it smaller than this */
-    background-color: #9d601f;
+    background: #8D5922;
+    background: -moz-linear-gradient(top, #8D5922 0%, #73471A 50%, #5A3816 100%);
+    background: -webkit-linear-gradient(top, #8D5922 0%, #73471A 50%, #5A3816 100%);
+    background: linear-gradient(to bottom, #8D5922 0%, #73471A 50%, #5A3816 100%);
     position: relative;
     transition-property: height;
     transition-duration: 0.5s;
@@ -25,8 +28,11 @@
     transform: translate(-50%, -50%);
     position: absolute;}
 .card-place {
-    background-color: #8d5922;
-    border: 2px solid #68421a;
+    background: #71471A;
+    background: -moz-radial-gradient(center, #71471A 0%, #694219 50%, #5F3C16 100%);
+    background: -webkit-radial-gradient(center, #71471A 0%, #694219 50%, #5F3C16 100%);
+    background: radial-gradient(ellipse at center, #71471A 0%, #694219 50%, #5F3C16 100%);
+    border: 2px solid #33200D;
 
     /* make sure that these things get "hidden" behind the cards
        without this, it looks ok on chromium but not on firefox */
@@ -36,10 +42,13 @@
 }
 
 .card {
-    background-color: rgb(144, 0, 0);
+    background-color: #850000;
     border: 1px solid #333;
     transition-property: background-color, left, top, z-index;
     transition-duration: 0.2s;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px whitesmoke;
 }
 .card.visible {
     background-color: whitesmoke;
@@ -48,7 +57,7 @@
     transition-property: none;
 }
 .card.ready2drop {
-    border: 5px solid rgb(3, 191, 0);
+    border: 5px solid #22D600;
 }
 
 .card > div {
@@ -73,5 +82,5 @@
     transform: rotate(180deg);
 }
 
-.card.black.visible > div { color: black; }
-.card.red.visible > div { color: red; }
+.card.black.visible > div { color: black; font-family: Arial, Helvetica, sans-serif;}
+.card.red.visible > div { color: red; font-family: Arial, Helvetica, sans-serif;}
