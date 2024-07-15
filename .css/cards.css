@@ -1,9 +1,15 @@
 #game {
-    min-height: 25em;   /* javascript sets height, but that can't make it smaller than this */
-    background: #8D5922;
+    /* background-image: url("./images/wood_gameboard.jpg"); */
+    /* min-height: 25em;   javascript sets height, but that can't make it smaller than this */
+    /* background: #8D5922;
     background: -moz-linear-gradient(top, #8D5922 0%, #73471A 50%, #5A3816 100%);
     background: -webkit-linear-gradient(top, #8D5922 0%, #73471A 50%, #5A3816 100%);
-    background: linear-gradient(to bottom, #8D5922 0%, #73471A 50%, #5A3816 100%);
+    background: linear-gradient(to bottom, #8D5922 0%, #73471A 50%, #5A3816 100%); */
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/13/21/06/floral-background-6622475_1280.png");
+    background-repeat: repeat;
+    background-attachment: local;
+    /* background-size: cover; */
+    background-position: center;
     position: relative;
     transition-property: height;
     transition-duration: 0.5s;
@@ -28,10 +34,16 @@
     transform: translate(-50%, -50%);
     position: absolute;}
 .card-place {
-    background: #71471A;
+    background-image: url("https://cdn.pixabay.com/photo/2023/12/31/19/19/mountains-8480519_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 110% 110%;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    /* background: #71471A;
     background: -moz-radial-gradient(center, #71471A 0%, #694219 50%, #5F3C16 100%);
     background: -webkit-radial-gradient(center, #71471A 0%, #694219 50%, #5F3C16 100%);
-    background: radial-gradient(ellipse at center, #71471A 0%, #694219 50%, #5F3C16 100%);
+    background: radial-gradient(ellipse at center, #71471A 0%, #694219 50%, #5F3C16 100%); */
     border: 2px solid #33200D;
 
     /* make sure that these things get "hidden" behind the cards
@@ -43,7 +55,7 @@
 
 .card {
     background-color: #850000;
-    border: 1px solid #333;
+    border: 1.5px solid #333;
     transition-property: background-color, left, top, z-index;
     transition-duration: 0.2s;
 }
@@ -82,5 +94,5 @@
     transform: rotate(180deg);
 }
 
-.card.black.visible > div { color: black; font-family: Arial, Helvetica, sans-serif;}
-.card.red.visible > div { color: red; font-family: Arial, Helvetica, sans-serif;}
+.card.black.visible > div { color: black; text-shadow: 0px 0px 0px #000000; font-family: Arial, Helvetica, sans-serif;}
+.card.red.visible > div { color: red; text-shadow: 0px 0px 0px #000000; font-family: Arial, Helvetica, sans-serif;}

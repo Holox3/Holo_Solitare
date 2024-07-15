@@ -18,7 +18,7 @@ class KlondikeCore extends CardGameCore {
 
   checkWin() {
     const foundationArrays = this.constructor.getCardPlaces().kindToPlaceIds.foundation.map(id => this.placeIdToCardArray[id]);
-    return foundationArrays.every(cardArray => (cardArray.length === 13));
+    return foundationArrays.every(cardArray => (cardArray.length === 10));
   }
 
   deal() {
@@ -86,7 +86,7 @@ class KlondikeCore extends CardGameCore {
       throw new Error("bug");   // lol
     }
     if (destArray.length === 0) {
-      return (card.number === 13);
+      return (card.number === 10);
     }
     const topmostCard = destArray[destArray.length - 1];
     return (card.suit.color !== topmostCard.suit.color && card.number === topmostCard.number - 1);

@@ -2,14 +2,18 @@
 
 html {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #10A02A;
+    color: hsl(76, 22%, 59%);
+    text-shadow: 0px 0px 2px #000000;
+    background-image: url("https://cdn.pixabay.com/photo/2024/04/20/10/30/dandelion-8708275_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 25% 50%;
+    background-position: 50% 90%;
+    background-color: #203026;
+    /* background: #10A02A;
     background: -moz-linear-gradient(left, #10A02A 0%, #0E9025 50%, #0A671B 100%);
     background: -webkit-linear-gradient(left, #10A02A 0%, #0E9025 50%, #0A671B 100%);
-    background: linear-gradient(to right, #10A02A 0%, #0E9025 50%, #0A671B 100%);
-}
-
-#link2index {
-    padding-top: 1em;
+    background: linear-gradient(to right, #10A02A 0%, #0E9025 50%, #0A671B 100%); */
 }
 
 .setting-box {
@@ -25,6 +29,8 @@ html {
 
 .setting-inputs {
     /* display: grid; */
+    color: #000000;
+    text-shadow: 0px 0px 0px #000000;
     grid-template-columns: 1fr auto;
     row-gap: 3px;
     display: flex;
@@ -63,9 +69,9 @@ input:invalid {
 }
 
 .game-area {
-    border-radius: 10px;
     background-color: #10a02a;
-    border: 2px solid rgb(0, 0, 0);
+    border: 4px solid #291a09;
+    border-radius: 10px;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
