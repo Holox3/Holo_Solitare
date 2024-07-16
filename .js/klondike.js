@@ -86,7 +86,7 @@ class KlondikeCore extends CardGameCore {
       throw new Error("bug");   // lol
     }
     if (destArray.length === 0) {
-      return (card.number === 10);
+      return (card.number === 13);
     }
     const topmostCard = destArray[destArray.length - 1];
     return (card.suit.color !== topmostCard.suit.color && card.number === topmostCard.number - 1);
